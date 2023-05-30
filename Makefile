@@ -12,6 +12,7 @@ sync:
 	[ -f ~/.config/alacritty/color.yml ] || ln -s $(PWD)/alacritty_color.yml ~/.config/alacritty/color.yml
 	[ -f ~/.config/git/config ] || ln -s $(PWD)/gitconfig ~/.config/git/config
 	[ -f ~/.local/share/fonts ] || cp -r $(PWD)/fonts/* ~/.local/share/fonts
+	cat update_bashrc >> ~/.bashrc
 
 clean:
 	rm -f ~/.bash_aliases
