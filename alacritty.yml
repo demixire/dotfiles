@@ -1,0 +1,23 @@
+import:
+    - "~/.config/alacritty/color.yml:
+
+TERM: alacritty
+
+window:
+  dynamic_padding: true
+  decorations: none
+  startup_mode: Maximized
+  title: Alacritty
+
+scrolling:
+  history: 3000
+
+font:
+  normal:
+    family: IBMPlexMono
+  size: 14.0
+
+colors: *bow
+
+live_config_reload: true
+
