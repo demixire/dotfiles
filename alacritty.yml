@@ -18,6 +18,70 @@ font:
   size: 14.0
 
 schemes:
+# github Alacritty Colors
+  ghblind: &ghblind
+    # Default colors
+    primary:
+      background: '0xffffff'
+      foreground: '0x0E1116'
+
+    # Normal colors
+    normal:
+      black:   '0x24292f'
+      red:     '0xcf222e'
+      green:   '0x116329'
+      yellow:  '0x4d2d00'
+      blue:    '0x0969da'
+      magenta: '0x8250df'
+      cyan:    '0x1b7c83'
+      white:   '0x6e7781'
+
+    # Bright colors
+    bright:
+      black:   '0x57606a'
+      red:     '0xa40e26'
+      green:   '0x1a7f37'
+      yellow:  '0x633c01'
+      blue:    '0x218bff'
+      magenta: '0xa475f9'
+      cyan:    '0x3192aa'
+      white:   '0x8c959f'
+
+    indexed_colors:
+      - { index: 16, color: '0xd18616' }
+      - { index: 17, color: '0xa40e26' }
+
+
+# Colors (Tomorrow Night Bright)
+  tomorrow_night_bright: &tnb
+    # Default colors
+    primary:
+      background: '0x000000'
+      foreground: '0xeaeaea'
+
+    # Normal colors
+    normal:
+      black:   '0x000000'
+      red:     '0xd54e53'
+      green:   '0xb9ca4a'
+      yellow:  '0xe6c547'
+      blue:    '0x7aa6da'
+      magenta: '0xc397d8'
+      cyan:    '0x70c0ba'
+      white:   '0x424242'
+
+    # Bright colors
+    bright:
+      black:   '0x666666'
+      red:     '0xff3334'
+      green:   '0x9ec400'
+      yellow:  '0xe7c547'
+      blue:    '0x7aa6da'
+      magenta: '0xb77ee0'
+      cyan:    '0x54ced6'
+      white:   '0x2a2a2a'
+
+
   monokai: &mono
     # Default colors
     primary:
@@ -46,7 +110,7 @@ schemes:
       cyan:    '0x85dacc'
       white:   '0xfff1f3'
 
-colors:  *mono
+colors:  *ghblind
 
 live_config_reload: true
 
